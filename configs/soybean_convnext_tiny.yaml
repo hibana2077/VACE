@@ -1,7 +1,7 @@
 dataset:
   auto_augment: rand-m9-mstd0.5-inc1
   interpolation: bicubic
-  name: cotton80
+  name: soybean
   num_workers: 4
   re_count: 1
   re_mode: pixel
@@ -13,23 +13,23 @@ logging:
   use_wandb: false
 loss:
   a: 1.0
-  b: 1.0
+  b: 0.5
   ema_decay: 0.1
-  label_smoothing: 0.1
+  label_smoothing: 0.0
   tau_max: 2.0
   tau_min: 0.5
-  type: ce
+  type: vace
 model:
-  backbone: resnet18
+  backbone: convnext_tiny.in12k_ft_in1k
   pretrained: true
 optimizer:
   betas:
     - 0.9
     - 0.999
-  lr: 0.1
+  lr: 0.0001
   momentum: 0.9
   nesterov: true
-  type: sgd
+  type: adamw
   weight_decay: 0.0001
 output:
   checkpoint_dir: ./outputs/checkpoints
@@ -44,6 +44,6 @@ scheduler:
   type: cosine
 seed: 42
 training:
-  batch_size: 64
-  epochs: 100
+  batch_size: 32
+  epochs: 200
   use_amp: true

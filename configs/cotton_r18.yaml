@@ -15,12 +15,12 @@ loss:
   a: 1.0
   b: 1.0
   ema_decay: 0.1
-  label_smoothing: 0.0
+  label_smoothing: 0.1
   tau_max: 2.0
   tau_min: 0.5
-  type: vace # vace or ce
+  type: ce
 model:
-  backbone: resnet50
+  backbone: resnet18.fb_swsl_ig1b_ft_in1k
   pretrained: true
 optimizer:
   betas:
