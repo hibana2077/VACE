@@ -253,7 +253,7 @@ python train.py --config configs/cotton_r50_224.yaml
 
 ## 🚀 High-Performance Computing
 
-Pre-configured PBS scripts for HPC environments:
+Pre-configured PBS scripts for HPC environments(e.g., Gadi at NCI):
 
 ```bash
 # Submit to A100 queue
@@ -266,12 +266,14 @@ qsub scripts/train_v100.sh
 ## 📋 Requirements
 
 ### Core Dependencies
-- Python ≥ 3.8
-- PyTorch ≥ 1.9
-- timm ≥ 0.6.0
+
+- Python ≥ 3.11
+- PyTorch ≥ 2.1
+- timm ≥ 0.9.0
 - NumPy, Pandas, PIL
 
-### Optional Dependencies  
+### Optional Dependencies
+
 - TensorBoard (logging)
 - Weights & Biases (experiment tracking)
 - Matplotlib, Seaborn (visualization)
