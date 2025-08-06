@@ -16,4 +16,4 @@ source /scratch/rp06/sl5952/VACE/.venv/bin/activate
 
 cd ..
 # Run training
-python train.py --config configs/cotton_r50.yaml >> out_train_a100.txt
+python train.py --config configs/cotton_convnext_tiny.yaml >> out_train_a100.txt
