@@ -46,10 +46,8 @@ python setup.py
 ### Manual Installation
 
 ```bash
-pip install torch torchvision timm numpy pandas pillow scikit-learn
-pip install pyarrow fastparquet requests pyyaml tqdm matplotlib seaborn
-pip install tensorboard  # Optional: for logging
-pip install wandb       # Optional: for experiment tracking
+pip3 install uv
+uv pip install -r requirements.txt
 ```
 
 ## 🎯 Quick Start
@@ -71,7 +69,7 @@ python download_dataset.py --dataset cotton80
 ### 3. Train Model
 ```bash
 # Train with VACE on Cotton80 using ResNet50
-python train.py --config configs/cotton_r50_224.yaml
+python train.py --config configs/cotton_r50.yaml
 
 # Or with command line arguments
 python train.py --dataset cotton80 --backbone resnet50 --loss vace --epochs 100
