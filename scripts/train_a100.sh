@@ -18,4 +18,4 @@ cd ..
 # Run training
 # python train.py --config configs/cotton_convnext_tiny.yaml >> out_train_a100.txt
 # python train.py --config configs/cotton_r50.yaml >> out_train_a100.txt
-python train.py --config configs/cotton_tiny_vit.yaml --batch-size 64 --epochs 10 >> out_train_a100.txt
+python train.py --config configs/cotton_tiny_vit.yaml >> out_train_a100.txt
