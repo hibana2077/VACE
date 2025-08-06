@@ -318,5 +318,5 @@ If you use VACE in your research, please cite:
 ## 🙏 Acknowledgments
 
 - [timm](https://github.com/rwightman/pytorch-image-models) for the excellent model library
-- [Ultra-FGVC](https://arxiv.org/abs/2203.03619) for the benchmark datasets
+- [Ultra-FGVC](https://github.com/XiaohanYu-GU/Ultra-FGVC) for the benchmark datasets
 - PyTorch team for the deep learning framework
