@@ -2,7 +2,7 @@ dataset:
   auto_augment: rand-m9-mstd0.5-inc1
   interpolation: bicubic
   name: cotton80
-  num_workers: 4
+  num_workers: 8
   re_count: 1
   re_mode: pixel
   re_prob: 0.25

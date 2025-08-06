@@ -165,10 +165,6 @@ class VACETrainer:
             transform = timm.data.create_transform(
                 **data_cfg,
                 is_training=True,
-                auto_augment=self.config['dataset'].get('auto_augment', 'rand-m9-mstd0.5-inc1'),
-                re_prob=self.config['dataset'].get('re_prob', 0.25),
-                re_mode=self.config['dataset'].get('re_mode', 'pixel'),
-                re_count=self.config['dataset'].get('re_count', 1),
             )
         else:
             # Validation/test transforms without augmentation
