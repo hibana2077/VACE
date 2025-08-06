@@ -11,9 +11,9 @@
 module load cuda/12.6.2
 # module load python3/3.10.4
 
-nvidia-smi >> gpu-info.txt
+nvidia-smi >> gpu-info-v100.txt
 source /scratch/rp06/sl5952/VACE/.venv/bin/activate
 
 cd ..
 # Run training
-python train.py --config configs/cotton_r18_224.yaml >> out_train_v100.txt
+python train.py --config configs/cotton_r18.yaml >> out_train_v100.txt
