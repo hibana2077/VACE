@@ -288,7 +288,7 @@ qsub scripts/train_v100.sh
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📚 Citation
+<!-- ## 📚 Citation
 
 If you use VACE in your research, please cite:
 
@@ -299,7 +299,7 @@ If you use VACE in your research, please cite:
   journal={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
   year={2024}
 }
-```
+``` -->
 
 ## 🆘 Troubleshooting
 
