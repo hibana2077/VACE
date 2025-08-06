@@ -63,7 +63,7 @@ class VAEEvaluator:
         """Load model from checkpoint"""
         print(f"Loading checkpoint: {self.checkpoint_path}")
         
-        checkpoint = torch.load(self.checkpoint_path, map_location=self.device)
+        checkpoint = torch.load(self.checkpoint_path, map_location=self.device, weights_only=False)
         
         # Get model configuration from checkpoint
         if 'config' in checkpoint:

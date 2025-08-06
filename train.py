@@ -518,7 +518,7 @@ class VACETrainer:
         
         # Load best model if available
         if self.best_model_path and self.best_model_path.exists():
-            checkpoint = torch.load(self.best_model_path)
+            checkpoint = torch.load(self.best_model_path, weights_only=False)
             self.model.load_state_dict(checkpoint['model_state_dict'])
             self.head.load_state_dict(checkpoint['head_state_dict'])
             if 'loss_state_dict' in checkpoint and hasattr(self.loss_fn, 'load_state_dict'):
