@@ -18,7 +18,7 @@ loss:
   label_smoothing: 0.5
   tau_max: 1.6
   tau_min: 0.8
-  type: vace # vace or ce
+  type: ce # vace or ce
 model:
   backbone: tiny_vit_21m_512.dist_in22k_ft_in1k
   pretrained: true
